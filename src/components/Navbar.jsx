@@ -10,7 +10,7 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="flex justify-between items-center h-16 max-w-[100%] mx-auto px-4 text-white bg-tarawera z-50">
+    <div className="flex justify-between items-center h-16 max-w-[100%] mx-auto px-4 text-white bg-tarawera ">
       <div className="flex sm:px-[28rem] md:px-[10rem] space-x-3 items-center ">
         <img
           src={logo}

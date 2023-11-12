@@ -9,8 +9,8 @@ import Newsletter from "./components/Newsletter";
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
+      <Navbar className="z-50" />
+      <Hero className="z-0" />
       {/* <Analytics /> */}
       <Newsletter />
       <Cards />

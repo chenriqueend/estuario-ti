@@ -4,15 +4,14 @@ const Cards = () => {
   return (
     <div className="w-full pb-48 px-4 bg-[#112329]">
       <div className="py-10">
-        <p className="text-center font-sans text-24 font-light text-white pb-12">
+        <p className="text-center font-sans text-34 font-light text-white pb-12">
           No Brasil, os incidentes de segurança aumentaram significativamente
           nos últimos três anos.
           <br /> Seu negócio possui um nível de segurança para evitar invasões e
           que os seus dados não sejam expostos?
         </p>
-        <p className="text-center font-sans text-12 font-light text-lima">
-          As metodologias de testes de intrusão da EstuárioTI fornecem uma
-          abordagem consistente para garantir resultados completos e detalhados
+        <p className="text-center font-sans text-12 text-lima font-bold">
+          {"As metodologias de testes de intrusão da EstuárioTI fornecem uma abordagem consistente para garantir resultados completos e detalhados".toUpperCase()}
         </p>
       </div>
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
