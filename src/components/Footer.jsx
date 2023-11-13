@@ -31,7 +31,7 @@ const Footer = () => {
               data-query="Rua Demócrito de Souza Filho, 335"
               data-i18n="[html]address.recife"
             >
-              <h2>Recife</h2>Rua do Chacon, 51 <br></br> Poço da Panela -
+              <h2>Pernambuco</h2>Rua do Chacon, 51 <br></br> Poço da Panela -
               Recife/PE <br></br> CEP 52061-400 <br></br> Fone +55 81 3236-0961
             </address>
           </div>
