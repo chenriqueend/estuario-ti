@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/estuario-ti/static/css/main.ba150eae.css",
-    "main.js": "/estuario-ti/static/js/main.da1c44df.js",
+    "main.css": "/estuario-ti/static/css/main.c69068cf.css",
+    "main.js": "/estuario-ti/static/js/main.8f808285.js",
     "static/media/mainLogo.svg": "/estuario-ti/static/media/mainLogo.dfb29df7a3dd87da258e03f8a79bb334.svg",
     "static/media/logo.svg": "/estuario-ti/static/media/logo.90eaee8d0757f01dbac795f13f423b97.svg",
     "index.html": "/estuario-ti/index.html",
-    "main.ba150eae.css.map": "/estuario-ti/static/css/main.ba150eae.css.map",
-    "main.da1c44df.js.map": "/estuario-ti/static/js/main.da1c44df.js.map"
+    "main.c69068cf.css.map": "/estuario-ti/static/css/main.c69068cf.css.map",
+    "main.8f808285.js.map": "/estuario-ti/static/js/main.8f808285.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba150eae.css",
-    "static/js/main.da1c44df.js"
+    "static/css/main.c69068cf.css",
+    "static/js/main.8f808285.js"
   ]
 }
