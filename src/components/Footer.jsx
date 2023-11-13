@@ -24,8 +24,8 @@ const Footer = () => {
           }
         >
           <div
-            className="flex justify-center mt-4 bg-[#253D47] rounded-lg 
-          py-4 hover:cursor-pointer hover:text-lima hover:scale-105 duration-300 "
+            className="flex justify-center mt-4 bg-[#253D47] rounded-lg w-[50%]
+          p-4 hover:cursor-pointer hover:text-lima hover:scale-105 duration-300 "
           >
             <address
               data-query="Rua Demócrito de Souza Filho, 335"
