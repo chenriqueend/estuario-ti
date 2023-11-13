@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 
 const Cards = () => {
   return (
@@ -87,21 +87,24 @@ const Cards = () => {
       </div>
       <div className="flex justify-center mt-12 ">
         <div className="flex-column">
-          <form action="" onClick={""}>
+          <form action="">
             <label
-              for="message"
-              class="block mb-2 text-1xl font-medium text-[#DAFF00] "
+              htmlFor="message"
+              className="block mb-2 text-1xl font-medium text-[#DAFF00] "
             >
               Entre em contato
             </label>
             <textarea
               id="message"
               rows="4"
-              class="block p-2.5 w-[22rem] md:w-[62.5rem] text-sm text-gray-900
-               rounded-lg border border-white focus:ring-blue-500
-              focus:border-blue-500 bg-[#112329] dark:border-gray-600
-              dark:placeholder-gray-400 dark:text-white
-              dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block p-2.5 w-[22rem] md:w-[62.5rem] text-sm 
+               rounded-lg border border-gray-600 
+               valid:border-lima bg-[#112329] 
+              placeholder-gray-400 text-white
+              autofill:shadow-[inset_0_0_0px_1000px_rgb(17,35,41)]
+              autofill:transition-colors autofill:duration-[5000000ms]
+              autofill:!text-white
+               "
               placeholder="Escreva o texto para o email."
               required
             ></textarea>
@@ -109,14 +112,21 @@ const Cards = () => {
               <input
                 type="email"
                 id="email"
-                class=" border border-gray-300  text-gray-900 text-sm
-                rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[60%] md:w-[30%]
-                p-2.5  dark:border-gray-600 dark:placeholder-gray-400
-                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 bg-[#112329]"
+                className={` border   text-sm
+                rounded-lg block w-[60%] md:w-[30%]
+                p-2.5 border-gray-600 placeholder-gray-400  
+                text-white valid:border-lima bg-[#112329]
+                 autofill:shadow-[inset_0_0_0px_1000px_rgb(17,35,41)]
+                 autofill:transition-colors autofill:duration-[5000000ms]
+                 autofill:!text-white
+                `}
                 placeholder="felipemaciel@estuarioti.com.br"
                 required
               ></input>
-              <button className="bg-[#DAFF00] w-[120px] rounded-md font-medium py-2 hover:scale-105 duration-300">
+              <button
+                className="bg-[#DAFF00] w-[120px] rounded-md font-medium 
+              py-2 hover:scale-105 duration-300"
+              >
                 Enviar
               </button>
             </div>
