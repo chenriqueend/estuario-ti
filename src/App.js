@@ -1,18 +1,16 @@
 import React from "react";
-// import Analytics from "./components/Analytics";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Newsletter from "./components/Newsletter";
+
+/** Desenvolvido por Carlos Henrique alves
+ * https://github.com/chenriqueend
+ */
 
 function App() {
   return (
     <div>
-      <Navbar className="z-50" />
-      <Hero className="z-0" />
-      {/* <Analytics /> */}
-      <Newsletter />
+      <Hero />
       <Cards />
       <Footer />
     </div>
