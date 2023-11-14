@@ -102,7 +102,7 @@ const Cards = () => {
                valid:border-lima bg-[#112329] 
               placeholder-gray-400 text-white
               autofill:shadow-[inset_0_0_0px_1000px_rgb(17,35,41)]
-              autofill:transition-colors autofill:duration-[5000000ms]
+               autofill:duration-[5000000ms]
               autofill:!text-white
                "
               placeholder="Escreva o texto para o email."
@@ -116,8 +116,9 @@ const Cards = () => {
                 rounded-lg block w-[60%] md:w-[30%]
                 p-2.5 border-gray-600 placeholder-gray-400  
                 text-white valid:border-lima bg-[#112329]
+                focus:bg-[#112329]
                  autofill:shadow-[inset_0_0_0px_1000px_rgb(17,35,41)]
-                 autofill:transition-colors autofill:duration-[5000000ms]
+                  autofill:duration-[5000000ms]
                  autofill:!text-white
                 `}
                 placeholder="felipemaciel@estuarioti.com.br"
