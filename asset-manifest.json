@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/estuario-ti/static/css/main.c69068cf.css",
-    "main.js": "/estuario-ti/static/js/main.67e068cf.js",
+    "main.css": "/estuario-ti/static/css/main.855a7603.css",
+    "main.js": "/estuario-ti/static/js/main.7d095d84.js",
+    "static/media/infoEstuario.pdf": "/estuario-ti/static/media/infoEstuario.87b386fd17ebfa20b1d8.pdf",
     "static/media/mainLogo.svg": "/estuario-ti/static/media/mainLogo.dfb29df7a3dd87da258e03f8a79bb334.svg",
-    "static/media/logo.svg": "/estuario-ti/static/media/logo.90eaee8d0757f01dbac795f13f423b97.svg",
+    "static/media/icones-02.png": "/estuario-ti/static/media/icones-02.ea6f9395a3236ab78127.png",
+    "static/media/logo.svg": "/estuario-ti/static/media/logo.bfed95119ce24940b6329646a3b5fe73.svg",
+    "static/media/logoLima.svg": "/estuario-ti/static/media/logoLima.e8433be837798a94e2d0f4704d394543.svg",
     "index.html": "/estuario-ti/index.html",
-    "main.c69068cf.css.map": "/estuario-ti/static/css/main.c69068cf.css.map",
-    "main.67e068cf.js.map": "/estuario-ti/static/js/main.67e068cf.js.map"
+    "main.855a7603.css.map": "/estuario-ti/static/css/main.855a7603.css.map",
+    "main.7d095d84.js.map": "/estuario-ti/static/js/main.7d095d84.js.map"
   },
   "entrypoints": [
-    "static/css/main.c69068cf.css",
-    "static/js/main.67e068cf.js"
+    "static/css/main.855a7603.css",
+    "static/js/main.7d095d84.js"
   ]
 }
