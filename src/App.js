@@ -11,6 +11,8 @@ function App() {
   return (
     <div>
       <Hero />
+      <div id="root"></div>
+      <div id="modal-root"></div>
       <Cards />
       <Footer />
     </div>

@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Typed from "react-typed";
 import { useGlitch } from "react-powerglitch";
 import mainLogo from "../assets/mainLogo.svg";
 import logo from "../assets/logo.svg";
+import Modal from "./modal";
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
+  const [openVideo, setOpenVideo] = useState(false);
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
+  const handleOpenModal = () => {
+    if (isMobile) {
+      window.location.href = "https://www.youtube.com/watch?v=q-AGKT3YRYM";
+    } else {
+      setOpenVideo(true);
+    }
+  };
+
   const glitch = useGlitch({
     playMode: "always",
     createContainers: true,
@@ -34,14 +47,14 @@ const Hero = () => {
 
   return (
     <div className="text-white bg-[#112329]">
-      <div className="flex justify-center gap-3 pt-4">
+      <div className="flex justify-center gap-3 p-2 bg-lima  ">
         <img
           src={logo}
           alt="Estuário TI Logo"
           className="inline-block w-6 h-6 mt-[0.45rem]"
         />
         <h1
-          className="text-lima pb-0.5 font-sans text-3xl font-semibold 
+          className="text-[#112329] pb-0.5 font-sans text-2xl font-semibold 
         whitespace-nowrap"
         >
           Estuário TI
@@ -85,10 +98,29 @@ const Hero = () => {
           ref={glitch.ref}
           className="bg-[#DAFF00] w-[120px] rounded-lg font-medium my-6 
           mx-auto py-3 text-black hover:scale-105 duration-300"
+          onClick={handleOpenModal}
         >
           Saiba mais
         </button>
       </div>
+      {isMobile ? null : (
+        <Modal
+          isOpen={openVideo}
+          onClose={() => {
+            setOpenVideo(false);
+          }}
+        >
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/q-AGKT3YRYM?autoplay=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </Modal>
+      )}
     </div>
   );
 };

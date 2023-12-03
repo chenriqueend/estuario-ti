@@ -1,6 +1,16 @@
 import { React } from "react";
+import magnifyingGlass from "../assets/icones_Prancheta 1.png";
+import bug from "../assets/icones-02.png";
+import hackerBoy from "../assets/icones-03.png";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Cards = () => {
+  const openPDF = () => {
+    // Abre o arquivo PDF em uma nova aba
+    const path = require(`../assets/infoEstuario.pdf`);
+    window.open(path, "_blank");
+  };
+
   return (
     <div className="w-full pb-48 px-4 bg-[#253D47]">
       <div className="py-10">
@@ -25,13 +35,20 @@ const Cards = () => {
             </p>
           </div>
           <div className="text-center font-medium">
-            <p className="py-2 mx-8 mt-8"></p>
-            <p className="py-2 mx-8"></p>
-            <p className="py-2 mx-8"></p>
+            <p className="">
+              <img
+                src={magnifyingGlass}
+                alt="logo animated gif "
+                className=""
+              ></img>
+            </p>
           </div>
           <button
             className="bg-lima w-[200px] rounded-md font-medium my-6 
           mx-auto px-6 py-3"
+            onClick={() => {
+              openPDF("../assets/infoEstuario.pdf");
+            }}
           >
             Saiba mais
           </button>
@@ -49,13 +66,15 @@ const Cards = () => {
             </p>
           </div>
           <div className="text-center font-medium">
-            <p className="py-2  mx-8 mt-8"></p>
-            <p className="py-2  mx-8"></p>
-            <p className="py-2 mx-8"></p>
+            <img src={bug} alt="logo animated gif " className=""></img>
           </div>
           <button
             className="bg-[#253D47] text-[#DAFF00] w-[200px]
-            rounded-md font-medium my-6 mx-auto px-6 py-3"
+            rounded-md font-medium my-6 mx-auto px-6 py-3
+            "
+            onClick={() => {
+              openPDF("../assets/infoEstuario.pdf");
+            }}
           >
             Saiba mais
           </button>
@@ -73,13 +92,14 @@ const Cards = () => {
             </p>
           </div>
           <div className="text-center text-xs ">
-            <p className="py-2 mx-8 mt-8"></p>
-            <p className="py-2 mx-8"></p>
-            <p className="py-2 mx-8"></p>
+            <img src={hackerBoy} alt="logo animated gif " className=""></img>
           </div>
           <button
             className="bg-[#DAFF00] w-[200px] rounded-md 
           font-medium my-6 mx-auto px-6 py-3"
+            onClick={() => {
+              openPDF("../assets/infoEstuario.pdf");
+            }}
           >
             Saiba mais
           </button>
@@ -121,7 +141,7 @@ const Cards = () => {
                   autofill:duration-[5000000ms]
                  autofill:!text-white
                 `}
-                placeholder="felipemaciel@estuarioti.com.br"
+                placeholder="Seu email."
                 required
               ></input>
               <button
@@ -131,6 +151,12 @@ const Cards = () => {
                 Enviar
               </button>
             </div>
+            <ReCAPTCHA
+              sitekey="6LdWYRYpAAAAAIBnN92IZhMkXvGSl341ZIzfO-_J
+              secretkey: 6LdWYRYpAAAAAN0zWhYQ1OJ75jNRxx-IEKpLtKcs"
+              onChange={(value) => console.log("reCAPTCHA value: ", value)}
+              className="pt-4"
+            />
           </form>
         </div>
       </div>
