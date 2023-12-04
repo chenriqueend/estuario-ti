@@ -61,25 +61,25 @@ const Hero = () => {
         </h1>
       </div>
       <div
-        className=" absolute top-[30%] md:top-1/4 left-1/2 transform 
+        className=" absolute top-[30%] md:top-[32%] left-1/2 transform 
       -translate-x-1/2 -translate-y-1/2"
       >
         <img
           src={mainLogo}
-          alt="logo animated gif "
-          className="w-[280px] h-[280px] md:mt-36"
+          alt="main logo estuario ti"
+          className="w-[280px] h-[280px] md:mt-32"
         ></img>
       </div>
       <div
         className="min-h-screen relative max-w-[100%] w-full h-screen mx-auto
        text-center flex flex-col justify-center md:pt-36"
       >
-        <div className="flex justify-center items-center">
-          <p className="md:text-5xl text-1xl  font-bold py-4  whitespace-nowrap">
+        <div className="flex justify-center items-center ">
+          <p className="md:text-4xl text-1xl font-inter  font-normalpy-4  whitespace-nowrap">
             Sua solução em
           </p>
           <Typed
-            className="md:text-5xl text-lima  text-1xl font-bold md:pl-4 pl-2 
+            className="md:text-4xl text-lima text-1xl font-inter font-normal md:pl-4 pl-2 
             whitespace-nowrap"
             strings={[
               "segurança cibernética.",

@@ -43,13 +43,28 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex space-x-5 md:w-[75%] my-10 mx-8">
-            <a href="https://facebook.com/Estuarioti" title="Facebook">
+            <a
+              href="https://facebook.com/Estuarioti"
+              title="Facebook "
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaFacebookSquare size={30} className="hover:fill-lima" />
             </a>
-            <a href="https://www.instagram.com/estuario.ti/" title="Instagram">
+            <a
+              href="https://www.instagram.com/estuario.ti/"
+              title="Instagram"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagram size={30} className="hover:fill-lima" />
             </a>
-            <a href="https://twitter.com/estuarioti" title="Twitter">
+            <a
+              href="https://twitter.com/estuarioti"
+              title="Twitter"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaTwitterSquare size={30} className="hover:fill-lima" />
             </a>
           </div>
