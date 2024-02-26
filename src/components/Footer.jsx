@@ -1,5 +1,10 @@
 import { React } from "react";
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaMapMarked,
+  FaTwitterSquare,
+} from "react-icons/fa";
 
 import logo from "../assets/logoLima.svg";
 
@@ -17,20 +22,19 @@ const Footer = () => {
             <h1 className="w-full text-3xl font-bold text-lima">Estuário TI</h1>
           </div>
           <div
-            className="flex whitespace-nowrap mx-4 mt-3 gap-3 text-white text-center font-inter text-base font-light 
+            className="flex whitespace-nowrap mt-3 gap-2 text-white text-center align-middle font-inter text-base font-light 
           uppercase tracking-wider md:w-[207px]"
           >
             <a
               href="https://www.google.com/maps/place/Estu%C3%A1rioTI/
               @-8.0379788,-34.9193399,15z/data=!4m2!3m1!1s0x0:0xfa68e6c334ff3007?
               sa=X&ved=2ahUKEwiS49nwqfSCAxXKgpUCHVnNBewQ_BJ6BAhAEAA"
-              className="hover:text-lima"
+              title="Location"
               target="_blank"
               rel="noreferrer"
             >
-              recife{" "}
+              <FaMapMarked size={30} className="hover:fill-lima" />
             </a>
-            <h2>|</h2>
             <a
               href="https://www.google.com/maps/place/Estu%C3%A1rioTI/
               @-8.0379788,-34.9193399,15z/data=!4m2!3m1!1s0x0:0xfa68e6c334ff3007?
@@ -39,10 +43,21 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              são paulo
+              <div className=" mt-[0.3rem]"> recife </div>
+            </a>
+            <h2 className="mt-[0.3rem]">|</h2>
+            <a
+              href="https://www.google.com/maps/place/Estu%C3%A1rioTI/
+              @-8.0379788,-34.9193399,15z/data=!4m2!3m1!1s0x0:0xfa68e6c334ff3007?
+              sa=X&ved=2ahUKEwiS49nwqfSCAxXKgpUCHVnNBewQ_BJ6BAhAEAA"
+              className="hover:text-lima"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className=" mt-[0.3rem]"> são paulo </div>
             </a>
           </div>
-          <div className="flex space-x-5 md:w-[75%] my-10 mx-8">
+          <div className="flex space-x-5 md:w-[75%] my-6 mx-8">
             <a
               href="https://facebook.com/Estuarioti"
               title="Facebook "

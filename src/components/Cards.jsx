@@ -1,8 +1,9 @@
 import { React } from "react";
-import magnifyingGlass from "../assets/icones_Prancheta 1.png";
-import bug from "../assets/icones-02.png";
-import hackerBoy from "../assets/icones-03.png";
-import ReCAPTCHA from "react-google-recaptcha";
+import Swiper from "./Swiper";
+import tuba from "../assets/ISCONETUBApng.png";
+import lupa from "../assets/lupa.png";
+import lock from "../assets/cadeado.png";
+// import { sendMail } from "../services/mailto";
 
 const Cards = () => {
   const openPDF = () => {
@@ -14,13 +15,13 @@ const Cards = () => {
   return (
     <div className="w-full pb-48 px-4 bg-[#253D47]">
       <div className="py-10">
-        <p className="text-center font-sans text-2xl font-light text-white pb-12">
+        <p className="text-center font-sans text-3xl font-light text-white pb-12">
           No Brasil, os incidentes de segurança aumentaram significativamente
           nos últimos três anos.
           <br /> Seu negócio possui um nível de segurança para evitar invasões e
           que os seus dados não sejam expostos?
         </p>
-        <p className="text-center font-sans text-xs text-lima font-bold">
+        <p className="text-center font-sans text-1xl text-lima font-bold">
           {"As metodologias de testes de intrusão da Estuário TI fornecem uma abordagem consistente para garantir resultados completos e detalhados".toUpperCase()}
         </p>
       </div>
@@ -34,14 +35,12 @@ const Cards = () => {
               Análise de aplicações
             </p>
           </div>
-          <div className="text-center font-medium">
-            <p className="">
-              <img
-                src={magnifyingGlass}
-                alt="logo animated gif "
-                className=""
-              ></img>
-            </p>
+          <div className="text-center self-center  font-medium">
+            <img
+              src={tuba}
+              alt="logo animated gif "
+              className="h-[15rem] w-[15rem] mt-1"
+            ></img>
           </div>
           <button
             className="bg-lima w-[200px] rounded-md font-medium my-6 
@@ -65,8 +64,12 @@ const Cards = () => {
               Gestão de Vulnerabilidade
             </p>
           </div>
-          <div className="text-center font-medium">
-            <img src={bug} alt="logo animated gif " className=""></img>
+          <div className="text-center self-center  font-medium">
+            <img
+              src={lupa}
+              alt="logo animated gif "
+              className="h-[15rem] w-[10rem] mt-5"
+            ></img>
           </div>
           <button
             className="bg-[#253D47] text-[#DAFF00] w-[200px]
@@ -91,8 +94,12 @@ const Cards = () => {
               Teste de Intrusão
             </p>
           </div>
-          <div className="text-center text-xs ">
-            <img src={hackerBoy} alt="logo animated gif " className=""></img>
+          <div className="text-center justify-center self-center text-xs ">
+            <img
+              src={lock}
+              alt="logo animated gif "
+              className="h-[15rem] w-[10rem] mt-5"
+            ></img>
           </div>
           <button
             className="bg-[#DAFF00] w-[200px] rounded-md 
@@ -103,6 +110,14 @@ const Cards = () => {
           >
             Saiba mais
           </button>
+        </div>
+      </div>
+      <p className="text-center font-sans text-2xl text-lima mt-12 font-bold">
+        Clientes
+      </p>
+      <div className="flex justify-center items-center mt-8">
+        <div className="w-3/4 border-[0.5px] border-white rounded-lg p-6 ">
+          <Swiper />
         </div>
       </div>
       <div className="flex justify-center mt-12 ">
@@ -117,7 +132,7 @@ const Cards = () => {
             <textarea
               id="message"
               rows="4"
-              className="block p-2.5 w-[22rem] md:w-[62.5rem] text-sm 
+              className="block p-2.5 w-[20rem] lg:w-[66rem] md:w-[38rem] text-sm 
                rounded-lg border border-gray-600 
                valid:border-lima bg-[#112329] 
               placeholder-gray-400 text-white
@@ -147,16 +162,13 @@ const Cards = () => {
               <button
                 className="bg-[#DAFF00] w-[120px] rounded-md font-medium 
               py-2 hover:scale-105 duration-300"
+                onClick={() => {
+                  // sendMail();
+                }}
               >
                 Enviar
               </button>
             </div>
-            <ReCAPTCHA
-              sitekey="6LdWYRYpAAAAAIBnN92IZhMkXvGSl341ZIzfO-_J
-              secretkey: 6LdWYRYpAAAAAN0zWhYQ1OJ75jNRxx-IEKpLtKcs"
-              onChange={(value) => console.log("reCAPTCHA value: ", value)}
-              className="pt-4"
-            />
           </form>
         </div>
       </div>

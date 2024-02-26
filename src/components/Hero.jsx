@@ -3,6 +3,7 @@ import Typed from "react-typed";
 import { useGlitch } from "react-powerglitch";
 import mainLogo from "../assets/mainLogo.svg";
 import logo from "../assets/logo.svg";
+import bg from "../assets/BG.png";
 import Modal from "./modal";
 import { useMediaQuery } from "react-responsive";
 
@@ -18,6 +19,9 @@ const Hero = () => {
     }
   };
 
+  /**
+   * Hook responsavel por controlar a animacao de glitch do botao
+   *  */
   const glitch = useGlitch({
     playMode: "always",
     createContainers: true,
@@ -46,22 +50,25 @@ const Hero = () => {
   });
 
   return (
-    <div className="text-white bg-[#112329]">
-      <div className="flex justify-center gap-3 p-2 bg-lima  ">
+    <div
+      className="text-white bg-cover bg-center bg-no-repeat h-screen font-inter"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <div className="flex justify-center gap-2 p-2 bg-lima  ">
         <img
           src={logo}
           alt="Estuário TI Logo"
-          className="inline-block w-6 h-6 mt-[0.45rem]"
+          className="inline-block w-6 h-6 mt-1"
         />
         <h1
-          className="text-[#112329] pb-0.5 font-sans text-2xl font-semibold 
+          className="text-[#112329] pb-0.5 font-Klavika text-2xl font-semibold 
         whitespace-nowrap"
         >
           Estuário TI
         </h1>
       </div>
       <div
-        className=" absolute top-[30%] md:top-[32%] left-1/2 transform 
+        className=" absolute top-[30%] md:top-[32%] xl:top-[40%] left-1/2 transform 
       -translate-x-1/2 -translate-y-1/2"
       >
         <img
@@ -72,14 +79,14 @@ const Hero = () => {
       </div>
       <div
         className="min-h-screen relative max-w-[100%] w-full h-screen mx-auto
-       text-center flex flex-col justify-center md:pt-36"
+       text-center flex flex-col justify-center md:mt-36 xl:mt-18"
       >
         <div className="flex justify-center items-center ">
           <p className="md:text-4xl text-1xl font-inter  font-normalpy-4  whitespace-nowrap">
             Sua solução em
           </p>
           <Typed
-            className="md:text-4xl text-lima text-1xl font-inter font-normal md:pl-4 pl-2 
+            className="md:text-4xl text-lima text-1xl font-inter font-normal md:pl-3 pl-2 
             whitespace-nowrap"
             strings={[
               "segurança cibernética.",

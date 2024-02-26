@@ -11,7 +11,7 @@ module.exports = {
         lima: "#DAFF00",
       },
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["klavika-web, sans-serif"],
       },
       spacing: {
         "365px": "365px",
