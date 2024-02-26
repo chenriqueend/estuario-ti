@@ -1,0 +1,29 @@
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #112329;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #22373f;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.slide-item {
+  max-width: 190px;
+  max-height: 60px;
+}
+
+.swiper-slide {
+  text-align: center;
+  height: calc((100% - 30px) / 2) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
