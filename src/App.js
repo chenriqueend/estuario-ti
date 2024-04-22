@@ -1,7 +1,8 @@
 import React from "react";
-import Cards from "./components/Cards";
+import Services from "./components/Services.jsx";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import { InfoArea } from "./components/InfoArea.jsx";
 
 /** Desenvolvido por Carlos Henrique alves
  * https://github.com/chenriqueend
@@ -13,7 +14,8 @@ function App() {
       <Hero />
       <div id="root"></div>
       <div id="modal-root"></div>
-      <Cards />
+      <Services />
+      <InfoArea />
       <Footer />
     </div>
   );

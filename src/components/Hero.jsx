@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import Typed from "react-typed";
 import { useGlitch } from "react-powerglitch";
 import mainLogo from "../assets/mainLogo.svg";
-import logo from "../assets/logo.svg";
-import bg from "../assets/BG.png";
+import bg from "../assets/bg.png";
 import Modal from "./modal";
 import { useMediaQuery } from "react-responsive";
+import Navbar from "./Navbar";
+import ArrowBottomNavigator from "./ArrowBottomNavigator";
 
 const Hero = () => {
   const [openVideo, setOpenVideo] = useState(false);
@@ -51,38 +52,26 @@ const Hero = () => {
 
   return (
     <div
-      className="text-white bg-cover bg-center bg-no-repeat h-screen font-inter"
+      className="bg-cover bg-center bg-no-repeat h-[82.5rem] md:h-[86.5rem] "
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="flex justify-center gap-2 p-2 bg-lima  ">
-        <img
-          src={logo}
-          alt="Estuário TI Logo"
-          className="inline-block w-6 h-6 mt-1"
-        />
-        <h1
-          className="text-[#112329] pb-0.5 font-Klavika text-2xl font-semibold 
-        whitespace-nowrap"
-        >
-          Estuário TI
-        </h1>
-      </div>
+      <Navbar />
       <div
-        className=" absolute top-[30%] md:top-[32%] xl:top-[40%] left-1/2 transform 
+        className=" absolute top-[38%] md:top-[32%] xl:top-[40%] left-1/2 transform 
       -translate-x-1/2 -translate-y-1/2"
       >
         <img
           src={mainLogo}
           alt="main logo estuario ti"
-          className="w-[280px] h-[280px] md:mt-32"
+          className="w-[280px] h-[280px] md:mt-12"
         ></img>
       </div>
       <div
-        className="min-h-screen relative max-w-[100%] w-full h-screen mx-auto
-       text-center flex flex-col justify-center md:mt-36 xl:mt-18"
+        className="min-h-[62rem] md:min-h-[62rem] relative mx-auto
+       text-center flex flex-col justify-center transform translate-y-[18rem]"
       >
         <div className="flex justify-center items-center ">
-          <p className="md:text-4xl text-1xl font-inter  font-normalpy-4  whitespace-nowrap">
+          <p className="md:text-4xl text-1xl font-inter  font-normalpy-4  whitespace-nowrap text-white">
             Sua solução em
           </p>
           <Typed
@@ -109,6 +98,28 @@ const Hero = () => {
         >
           Saiba mais
         </button>
+
+        <div className="flex justify-center transform md:translate-y-[26rem] translate-y-[20rem]">
+          <div className="w-1/2 text-right"></div>
+          <div className="w-1/2 text-left pr-6 ">
+            <div className="">
+              <p className="md:text-lg text-sm font-extralight text-gray-400">
+                No Brasil, os incidentes de segurança aumentaram
+                <br />
+                significativamente nos últimos três anos. <br /> Seu negócio
+                possui um nível de segurança para evitar <br /> invasões e que
+                os seus dados não sejam expostos?
+              </p>
+              <p className="mt-2 md:text-lg text-sm font-bold text-white">
+                As metodologias de testes de intrusão da EstuárioTI <br />
+                fornecem uma abordagem consistente para garantir
+                <br />
+                resultados completos e detalhados.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ArrowBottomNavigator />
       </div>
       {isMobile ? null : (
         <Modal

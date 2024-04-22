@@ -16,7 +16,7 @@ const Modal = ({ isOpen, onClose, children }) => {
         <div className="bg-black p-4 rounded-md">{children}</div>
       </div>
     </div>,
-    document.getElementById("modal-root")
+    document.getElementById("modal-root"),
   );
 };
 

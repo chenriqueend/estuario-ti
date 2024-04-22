@@ -1,5 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -11,7 +9,7 @@ module.exports = {
         lima: "#DAFF00",
       },
       fontFamily: {
-        sans: ["klavika-web, sans-serif"],
+        sans: ["Barlow, sans-serif"],
       },
       spacing: {
         "365px": "365px",
