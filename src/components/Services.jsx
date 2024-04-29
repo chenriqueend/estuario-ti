@@ -21,57 +21,63 @@ const Services = () => {
           <div className="w-1/2 md:pr-4">
             <Dropdown title="Gestão de Vulnerabilidade">
               <p>
-                Por meio de simulações customizadas, a Estuário TI envia e-mails
-                maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
-                utilizamos técnicas avançadas de engenharia social. Criamos
-                simulações que se aproximam ao máximo dos ataques reais, levando
-                em consideração aspectos únicos da cultura da companhia e dos
-                seus colaboradores, bem como dados expostos na internet.
+                Mantenha toda sua infraestrutura de rede continuamente
+                protegida. Diferente do Teste de Instrusão que é pontual, aqui o
+                nosso time de especialistas age diariamente de forma proativa
+                como um invasor interno ou externo interessado em encontrar
+                vulnerabilidades tanto em aplicações web, bem como em
+                infraestrutura.
               </p>
             </Dropdown>
             <Dropdown title="ASA - Administração segura assistida">
               <p>
-                Por meio de simulações customizadas, a Estuário TI envia e-mails
-                maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
-                utilizamos técnicas avançadas de engenharia social. Criamos
-                simulações que se aproximam ao máximo dos ataques reais, levando
-                em consideração aspectos únicos da cultura da companhia e dos
-                seus colaboradores, bem como dados expostos na internet.
+                Administre a proteção da sua infraestrutura de rede com o nosso
+                time. Com a Administração Segura Assistida a infraestrutura de
+                servidores da sua empresa passa a ser administrada pelo nosso
+                time de experts em segurança da informação. Voltado
+                especialmente para companhias que não possuem equipes de
+                administração de sistemas, o serviço conta com SLA ágil,
+                variável de acordo com a necessidade da sua empresa.
               </p>
             </Dropdown>
             <Dropdown title="threat intelligence">
               <p>
-                Por meio de simulações customizadas, a Estuário TI envia e-mails
-                maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
-                utilizamos técnicas avançadas de engenharia social. Criamos
-                simulações que se aproximam ao máximo dos ataques reais, levando
-                em consideração aspectos únicos da cultura da companhia e dos
-                seus colaboradores, bem como dados expostos na internet.
+                O Threat Intelligence, ou inteligência de ameaças, visa proteger
+                sua empresa contra ameaças reais. Dessa maneira, são feitas
+                análises constantes na web, buscando evidências que caracterizem
+                ameaças de redes, networking, pessoas, aplicações web evitando
+                os riscos do seu negócio. Tal recurso, permite o gestor conhecer
+                os possíveis riscos e previni-los de modo eficaz, além de estar
+                sempre monitorando as informações da empresa na web.
               </p>
             </Dropdown>
             <Dropdown title="análise em aplicações web">
               <p>
-                Por meio de simulações customizadas, a Estuário TI envia e-mails
-                maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
-                utilizamos técnicas avançadas de engenharia social. Criamos
-                simulações que se aproximam ao máximo dos ataques reais, levando
-                em consideração aspectos únicos da cultura da companhia e dos
-                seus colaboradores, bem como dados expostos na internet.
-              </p>
-            </Dropdown>
-            <Dropdown title="análise forence digital">
-              <p>
-                Por meio de simulações customizadas, a Estuário TI envia e-mails
-                maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
-                utilizamos técnicas avançadas de engenharia social. Criamos
-                simulações que se aproximam ao máximo dos ataques reais, levando
-                em consideração aspectos únicos da cultura da companhia e dos
-                seus colaboradores, bem como dados expostos na internet.
+                Identifique e elimine ameaças tanto no desenvolvimento de suas
+                aplicações quanto em projetos já desenvolvidos.  Busca e
+                identifica vulnerabilidades capazes de impactar nas aplicações,
+                bem como no modelo de negócio da empresa. A análise ajuda a
+                reduzir custos no ciclo de desenvolvimento e minimizar os riscos
+                relacionados à segurança da informação.
               </p>
             </Dropdown>
           </div>
           <div className="w-1/2 md:pr-4">
-            <Dropdown title="engenharia social">
+            <Dropdown title="análise forence digital">
+              <p>
+                Análise forense digital, é o processo de coletar, preservar,
+                analisar e apresentar evidências digitais que podem ser usadas
+                em investigações legais. Esse campo da ciência forense lida com
+                a recuperação e investigação de informações encontradas em
+                dispositivos eletrônicos, como computadores, smartphones,
+                tablets, servidores, entre outros. A análise forense digital
+                envolve habilidades técnicas, conhecimento em leis e
+                regulamentações relacionadas à privacidade e segurança da
+                informação, bem como o uso de ferramentas especializadas para a
+                investigação de incidentes cibernéticos e crimes digitais.
+              </p>
+            </Dropdown>
+            {/* <Dropdown title="engenharia social">
               <p>
                 Por meio de simulações customizadas, a Estuário TI envia e-mails
                 maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
@@ -80,7 +86,7 @@ const Services = () => {
                 em consideração aspectos únicos da cultura da companhia e dos
                 seus colaboradores, bem como dados expostos na internet.
               </p>
-            </Dropdown>
+            </Dropdown> */}
             <Dropdown title="teste phishing">
               <p>
                 Por meio de simulações customizadas, a Estuário TI envia e-mails
@@ -93,15 +99,16 @@ const Services = () => {
             </Dropdown>
             <Dropdown title="pentest -  teste de instrusão">
               <p>
-                Por meio de simulações customizadas, a Estuário TI envia e-mails
-                maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
-                utilizamos técnicas avançadas de engenharia social. Criamos
-                simulações que se aproximam ao máximo dos ataques reais, levando
-                em consideração aspectos únicos da cultura da companhia e dos
-                seus colaboradores, bem como dados expostos na internet.
+                Fique ao menos um passo à frente do invasor. Focado na
+                infraestrutura de networking, o teste age como um invasor
+                interno ou externo interessado em encontrar e explorar as
+                vulnerabilidades. Mas não qualquer atacante. Nossos
+                especialistas procuram falhas manualmente, num processo
+                meticuloso de busca, garantindo resultados mais eficientes e
+                precisos, que só um humano com expertise é capaz de alcançar.
               </p>
             </Dropdown>
-            <Dropdown title="teste de ransomware">
+            {/* <Dropdown title="teste de ransomware">
               <p>
                 Por meio de simulações customizadas, a Estuário TI envia e-mails
                 maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
@@ -110,15 +117,14 @@ const Services = () => {
                 em consideração aspectos únicos da cultura da companhia e dos
                 seus colaboradores, bem como dados expostos na internet.
               </p>
-            </Dropdown>
+            </Dropdown> */}
             <Dropdown title="treinamento em segurança da informação">
               <p>
-                Por meio de simulações customizadas, a Estuário TI envia e-mails
-                maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
-                utilizamos técnicas avançadas de engenharia social. Criamos
-                simulações que se aproximam ao máximo dos ataques reais, levando
-                em consideração aspectos únicos da cultura da companhia e dos
-                seus colaboradores, bem como dados expostos na internet.
+                Realizamos treinamentos de Análise de aplicações Web e Testes de
+                Intrusão in company ou em nossas dependências. O treinamento de
+                análise de aplicações web é voltado para o publico que
+                desenvolve aplicações web. Já o de teste de intrusão é focado em
+                quem administra a rede da empresa (administradores de sistemas).
               </p>
             </Dropdown>
           </div>
@@ -151,7 +157,7 @@ const Dropdown = ({ title, children }) => {
       </div>
       <div
         style={{
-          maxHeight: isOpen ? "500px" : "0",
+          maxHeight: isOpen ? "200px" : "0",
           overflow: "hidden",
           transition: "max-height 0.5s ease-in-out, opacity 0.5s ease-in-out",
           opacity: isOpen ? 1 : 0,

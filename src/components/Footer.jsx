@@ -59,9 +59,9 @@ const Footer = () => {
             </a>
             <h2 className="mt-[0.3rem]">|</h2>
             <a
-              href="https://www.google.com/maps/place/Estu%C3%A1rioTI/
-              @-8.0379788,-34.9193399,15z/data=!4m2!3m1!1s0x0:0xfa68e6c334ff3007?
-              sa=X&ved=2ahUKEwiS49nwqfSCAxXKgpUCHVnNBewQ_BJ6BAhAEAA"
+              href="https://www.google.com/maps/place/L.+Padre+P%C3%A9ricles,+145+-+Barra+Funda,
+              +S%C3%A3o+Paulo+-+SP,+01156-040/data=!4m2!3m1!1s0x94ce581b1c834383:0xc414439e79299a30?
+              sa=X&ved=1t:242&ictx=111"
               className="hover:text-lima"
               target="_blank"
               rel="noreferrer"

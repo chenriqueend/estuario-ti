@@ -5,8 +5,8 @@ export const DataDisplay = () => {
   const data = [
     { title: "12+", value: "anos de experiência no mercado" },
     { title: "2000+", value: "projetos entregues e aprovados" },
-    { title: "200+", value: "empresas parceiras%" },
-    { title: "10+", value: "países atendidos" },
+    { title: "200+", value: "empresas atendidas" },
+    { title: "10+", value: "países servidos" },
   ];
 
   return (

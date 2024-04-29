@@ -7,9 +7,9 @@ export const VerticalTimeline = () => {
     {
       year: "2012",
       title:
-        "Foi o ano de maior mudança para a Estuário, nosso corpo de funcionários já estava bastante robusto e o escritório do Poço estava pequeno. Fomos para um lugar incrível que construímos tudo do nosso jeito, no bairro da Madalena.",
+        "Nasce no ano de 2012 a Estuário TI, nome que remete a um lugar seguro para desenvolvimento da vida existente nos mares e rios, uma empresa com DNA pernambucano voltada especificamente para segurança cibernética. ",
       description:
-        "Também em 2014 foi o ano em que abrimos o nosso escritório em São Paulo, sair de Recife não se significava apenas desenvolvimento corporativo, mas também, quebrar paradigmas e preconceitos, mostrando nossa qualidade nos serviços que entregávamos na maior cidade do Brasil. ",
+        "Diferente da maioria não nascemos de uma startup, mas sim do desejo de desenvolvimento de uma empresa com objetivos e missão definidas, e na contramão de não estar localizada no bairro do Recife, nosso primeiro escritório ficava no Derby.",
     },
     {
       year: "2013",
