@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/estuario-ti/static/css/main.369bdeb0.css",
-    "main.js": "/estuario-ti/static/js/main.80122837.js",
+    "main.js": "/estuario-ti/static/js/main.42398894.js",
     "static/media/mainLogo.svg": "/estuario-ti/static/media/mainLogo.dfb29df7a3dd87da258e03f8a79bb334.svg",
     "static/media/bg.png": "/estuario-ti/static/media/bg.2053e6c32fa75c2b7d23.png",
     "static/media/nassau.png": "/estuario-ti/static/media/nassau.2874180ea036aca31d8c.png",
@@ -14,10 +14,10 @@
     "static/media/plusIcon.svg": "/estuario-ti/static/media/plusIcon.afe922d272cc8465d32df9223abd0fad.svg",
     "static/media/arrowBottomNavigator.svg": "/estuario-ti/static/media/arrowBottomNavigator.830cc9e954b8d4a55e83565bc7956fe5.svg",
     "main.369bdeb0.css.map": "/estuario-ti/static/css/main.369bdeb0.css.map",
-    "main.80122837.js.map": "/estuario-ti/static/js/main.80122837.js.map"
+    "main.42398894.js.map": "/estuario-ti/static/js/main.42398894.js.map"
   },
   "entrypoints": [
     "static/css/main.369bdeb0.css",
-    "static/js/main.80122837.js"
+    "static/js/main.42398894.js"
   ]
 }
