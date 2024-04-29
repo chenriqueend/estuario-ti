@@ -7,7 +7,7 @@ const FormContact = () => {
         <form action="">
           <label
             htmlFor="message"
-            className="block mb-2 text-1xl font-medium text-[#DAFF00] "
+            className="block mb-4 md:text-2xl text-base font-bold  text-[#DAFF00] "
           >
             Entre em contato
           </label>
@@ -15,35 +15,36 @@ const FormContact = () => {
             id="message"
             rows="4"
             className="block p-2.5 w-[20rem] lg:w-[66rem] md:w-[38rem] text-sm 
-            rounded-lg border border-gray-600 
-          valid:border-lima bg-[#112329] 
+            rounded-lg border-2 border-white 
+          valid:border-lima bg-[#0F1621] 
           placeholder-gray-400 text-white
           autofill:shadow-[inset_0_0_0px_1000px_rgb(17,35,41)]
           autofill:duration-[5000000ms]
          autofill:!text-white"
-            placeholder="Escreva o texto para o email."
+            placeholder="Mensagem"
             required
           ></textarea>
           <div className="flex pt-4 gap-3">
             <input
               type="email"
               id="email"
-              className={` border   text-sm
-         rounded-lg block w-[60%] md:w-[30%]
-         p-2.5 border-gray-600 placeholder-gray-400  
-         text-white valid:border-lima bg-[#112329]
-         focus:bg-[#112329]
-          autofill:shadow-[inset_0_0_0px_1000px_rgb(17,35,41)]
-           autofill:duration-[5000000ms]
-          autofill:!text-white
-         `}
-              placeholder="Seu email."
+              className={` border-2  text-sm
+                rounded-lg block w-[60%] md:w-[30%]
+                p-2.5 border-white placeholder-gray-400  
+                text-white valid:border-lima bg-[#0F1621]
+                focus:bg-[#0F1621]
+                  autofill:shadow-[inset_0_0_0px_1000px_rgb(17,35,41)]
+                  autofill:duration-[5000000ms]
+                  autofill:!text-white
+                `}
+              placeholder="Email"
               required
             ></input>
             <button
-              className="bg-[#DAFF00] w-[120px] rounded-md font-medium 
-       py-2 hover:scale-105 duration-300"
+              className="bg-[#DAFF00] w-[120px] rounded-md text-black font-medium 
+               py-2 hover:scale-105 duration-300"
               onClick={() => {
+                //Clique responsável por enviar o email, aqui ficará a função conectada ao backend.
                 // sendMail();
               }}
             >

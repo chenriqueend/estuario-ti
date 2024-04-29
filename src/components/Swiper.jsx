@@ -1,17 +1,11 @@
 import React from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./styles.css";
-
 import { register } from "swiper/element/bundle";
-import arrowRight from "../assets/arrowRight.svg";
-import arrowLeft from "../assets/arrowLeft.svg";
 import abril from "../assets/customers/abril.png";
 import ale from "../assets/customers/ale.png";
 import apexBrasil from "../assets/customers/apexBrasil.png";
@@ -156,57 +150,56 @@ const data = [
     image: viaparque,
   },
 ];
-
 export default function Swipper() {
   return (
-    <div className="swiper-container">
+    <div className="flex flex-col">
+      {" "}
+      {/* Mudança aqui para flex-col e largura total */}
       <Swiper
+        className="md:max-w-[900px] max-w-[300px] "
         breakpoints={{
           320: {
-            slidesPerView: 1,
-            spaceBetween: 40,
+            slidesPerView: 2,
           },
           480: {
-            slidesPerView: 1,
-            spaceBetween: 40,
+            slidesPerView: 3,
           },
           640: {
             slidesPerView: 3,
-            spaceBetween: 90,
           },
           992: {
             slidesPerView: 4,
-            spaceBetween: 90,
           },
           1300: {
             slidesPerView: 5,
-            spaceBetween: 90,
           },
         }}
         grid={{
-          rows: 2,
+          rows: 1,
           fill: "row",
         }}
+        allowTouchMove={true}
         centeredSlides={true}
         autoplay={true}
         loop={true}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
       >
         {data.map((item) => (
-          <SwiperSlide key={item.id} className="swiper-slide">
-            <img src={item.image} alt="Slider" className="slide-item"></img>
+          <SwiperSlide
+            key={item.id}
+            className="flex justify-center items-center w-full"
+          >
+            <img
+              src={item.image}
+              alt="Slider"
+              className="md:max-w-[90px] md:max-h-[60px] max-w-[90px] max-h-[30px]"
+            />
           </SwiperSlide>
         ))}
-        <div className="swiper-button-prev flex items-center justify-center">
-          <img src={arrowLeft} alt="left arrow"></img>
-        </div>
-        <div className="swiper-button-next flex items-center justify-center">
-          <img src={arrowRight} alt="right arrow"></img>
-        </div>
       </Swiper>
+      <div className="border-b-[1px] mt-4"></div>
+      <div className="mt-4 self-end md:text-lg text-base text-lima font-bold">
+        NOSSOS CLIENTES
+      </div>
     </div>
   );
 }

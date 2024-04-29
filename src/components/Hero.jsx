@@ -53,12 +53,13 @@ const Hero = () => {
   return (
     <div
       className="bg-cover bg-center bg-no-repeat h-[82.5rem] md:h-[86.5rem] "
+      id="home"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <Navbar />
       <div
-        className=" absolute top-[38%] md:top-[32%] xl:top-[40%] left-1/2 transform 
-      -translate-x-1/2 -translate-y-1/2"
+        className=" absolute  left-1/2 transform 
+      -translate-x-1/2 translate-y-[12rem] "
       >
         <img
           src={mainLogo}

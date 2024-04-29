@@ -1,5 +1,4 @@
 const path = require("path");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const webpack = require("webpack");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
@@ -20,25 +19,25 @@ module.exports = {
       https: false,
       stream: false,
       crypto: false,
-      "crypto-browserify": require.resolve("crypto-browserify"), //if you want to use this module also don't forget npm i crypto-browserify
+      "crypto-browserify": require.resolve("crypto-browserify"),
     },
   },
   module: {
     rules: [
       {
-        test: /\.vue$/,
-        loader: "vue-loader",
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"],
+            plugins: ["@babel/plugin-proposal-class-properties"],
+          },
         },
       },
       {
         test: /\.css$/,
-        use: ["vue-style-loader", "css-loader"],
+        use: ["style-loader", "css-loader"], // Modifiquei para style-loader, mais comum em projetos React
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
@@ -54,5 +53,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [new VueLoaderPlugin(), new NodePolyfillPlugin()],
+  plugins: [new NodePolyfillPlugin()],
 };

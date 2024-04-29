@@ -21,7 +21,7 @@ const ArrowBottomNavigator = () => {
   }, [isMobile]);
 
   return (
-    <div className="self-center transform  md:translate-y-[-4rem] translate-y-[-16rem]">
+    <div className="self-center transform  md:translate-y-[-6rem] translate-y-[-16rem]">
       <img
         src={ArrowBottom}
         alt="ArrowBottom"

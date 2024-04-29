@@ -7,19 +7,31 @@ import {
 } from "react-icons/fa";
 
 import logo from "../assets/logoLima.svg";
+import Swiper from "./Swiper";
+import FormContact from "./FormContact";
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center bg-[#112329]">
-      <div className="flex itemmax-w-[100%] mx-auto py-16 md:px-36 gap-8 text-gray-300 ">
-        <div className="flex-column">
-          <div className="flex whitespace-nowrap space-x-3">
-            <img
-              src={logo}
-              alt="Estuário TI Logo "
-              className="fill-lima mt-1"
-            ></img>
-            <h1 className="w-full text-3xl font-bold text-lima">Estuário TI</h1>
+    <div className="flex items-center justify-center bg-[#060511]" id="contato">
+      <div className="mx-auto py-16 md:px-36 gap-8 text-gray-300 ">
+        <div className="md:max-w-[900px] max-w-[300px]">
+          <Swiper />
+        </div>
+        <div className="md:max-w-[900px] max-w-[300px] mb-[12rem]">
+          <FormContact />
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <div>
+            <div className="flex whitespace-nowrap space-x-3">
+              <img
+                src={logo}
+                alt="Estuário TI Logo "
+                className="fill-lima mt-1"
+              ></img>
+              <h1 className="w-full text-3xl font-bold text-lima">
+                Estuário TI
+              </h1>
+            </div>
           </div>
           <div
             className="flex whitespace-nowrap mt-3 gap-2 text-white text-center align-middle font-inter text-base font-light 
@@ -57,7 +69,7 @@ const Footer = () => {
               <div className=" mt-[0.3rem]"> são paulo </div>
             </a>
           </div>
-          <div className="flex space-x-5 md:w-[75%] my-6 mx-8">
+          <div className="flex space-x-5  my-6 mx-8">
             <a
               href="https://facebook.com/Estuarioti"
               title="Facebook "

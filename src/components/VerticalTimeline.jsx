@@ -1,48 +1,93 @@
 import React, { useState } from "react";
 
-export const VerticalTimeline = ({ data }) => {
-  const [hoverIndex, setHoverIndex] = useState(null);
+export const VerticalTimeline = () => {
+  const [visibleItems, setVisibleItems] = useState({});
+
+  const timelineEvents = [
+    {
+      year: "2012",
+      title:
+        "Foi o ano de maior mudança para a Estuário, nosso corpo de funcionários já estava bastante robusto e o escritório do Poço estava pequeno. Fomos para um lugar incrível que construímos tudo do nosso jeito, no bairro da Madalena.",
+      description:
+        "Também em 2014 foi o ano em que abrimos o nosso escritório em São Paulo, sair de Recife não se significava apenas desenvolvimento corporativo, mas também, quebrar paradigmas e preconceitos, mostrando nossa qualidade nos serviços que entregávamos na maior cidade do Brasil. ",
+    },
+    {
+      year: "2013",
+      title: "",
+      description:
+        "A Estuário é convidada para fazer parte da comunidade Conecta. Lá, neste primeiro ano já houve a mudança do escritório do Derby para o Poço da Panela, assim como os primeiros clientes em São Paulo.",
+    },
+    {
+      year: "2014",
+      title:
+        "Foi o ano de maior mudança para a Estuário, nosso corpo de funcionários já estava bastante robusto e o escritório do Poço estava pequeno. Fomos para um lugar incrível que construímos tudo do nosso jeito, no bairro da Madalena.",
+      description:
+        "Também em 2014 foi o ano em que abrimos o nosso escritório em São Paulo, sair de Recife não se significava apenas desenvolvimento corporativo, mas também, quebrar paradigmas e preconceitos, mostrando nossa qualidade nos serviços que entregávamos na maior cidade do Brasil.     ",
+    },
+    {
+      year: "2015",
+      title:
+        "Logo no início de 2015, desenvolvemos o produto El Pescador e deu início às atividades na área de treinamento, conscientização em segurança e testes de phishing. ",
+      description:
+        "Neste mesmo ano fizemos a transformação de produto para empresa e assim em setembro daquele ano concluímos a venda para a Tempest, que o adquiriu para desenvolvimento do seu portfólio. ",
+    },
+    {
+      year: "2016",
+      title: "",
+      description:
+        "Após a venda do El Pescador, a Estuário TI se consolidou no mercado de segurança da informação como uma empresa de serviços de alta qualidade e customizados para cada tipo de cliente. ",
+    },
+    {
+      year: "2020",
+      title: "",
+      description:
+        "Apesar do ano ser de pandemia tivemos um crescimento enorme, pois cresceu demais a demanda de crimes cibernéticos, o que consolidou ainda mais a Estuário TI.",
+    },
+    {
+      year: "2022",
+      title:
+        "Ao longo dos seus 12 anos, a Estuário já ajudou a proteger muitas empresas de todos os portes e setores, entre elas grandes companhias do setor financeiro, varejo, e-commerce, indústrias e energia, atuando em clientes nacionais e internacionais, sempre atendidos tanto pelo time no Brasil. ",
+      description:
+        "Em sua trajetória, a Estuário TI consolidou seus negócios aliando expertise técnica, sólida metodologia e alta tecnologia para entregar serviços de alta qualidade e customizados para cada necessidade de seus clientes.",
+    },
+    // Adicione mais objetos conforme necessário
+  ];
+
+  const toggleItem = (index) => {
+    setVisibleItems((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   return (
-    <div className="container">
-      <div className="flex flex-col md:grid grid-cols-6 mx-auto p-2 text-blue-50">
-        {data.map((item, index) => (
-          <div key={index} className="flex md:contents">
-            <div className=" translate-x-[200%] top-1/2 transform translate-y-[44%]">
-              <div className="text-lg font-semibold">{item.year}</div>
-            </div>
-            <div className="col-start-3 col-end-5 md:mx-auto relative mr-10">
-              <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full w-1 bg-[#DAFF00] pointer-events-none"></div>
-              </div>
+    <div id="timeline-container" className="p-15 overflow-auto">
+      <div className="inner-container max-w-4xl mx-auto">
+        <ul className="timeline relative md:pl-[12rem] pl-8 w-4/5 max-w-2xl mb-4 ml-auto">
+          {timelineEvents.map((event, index) => (
+            <li
+              className="timeline-item text-white text-center text-xl py-4 px-6 border-l-4 border-[#DAFF00] relative list-none"
+              data-date={event.year}
+              key={index}
+            >
               <div
-                className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white hover:bg-[#DAFF00] cursor-pointer shadow"
-                onMouseEnter={() => setHoverIndex(index)}
-                onMouseLeave={() => setHoverIndex(null)}
-              ></div>
-            </div>
-            <div className="col-start-5 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md min-w-[550px] text-left">
-              <h3
-                className="font-semibold text-lg mb-1"
-                style={{
-                  opacity: hoverIndex === index ? 1 : 0,
-                  visibility: hoverIndex === index ? "visible" : "hidden",
-                }}
+                className="timeline-marker absolute left-[-2px] top-5 -translate-x-1/2 w-4 h-4 bg-white hover:bg-[#DAFF00] rounded-full cursor-pointer"
+                onClick={() => toggleItem(index)}
+              />
+              <span className="absolute -left-20 top-3 font-bold text-white">
+                {event.year}
+              </span>
+              <div
+                className={`${
+                  visibleItems[index] ? "opacity-100" : "opacity-0"
+                } transition-opacity duration-500 ease-in-out text-left md:text-base text-sm font-extralight`}
               >
-                {item.title}
-              </h3>
-              <p
-                className="leading-tight text-justify"
-                style={{
-                  opacity: hoverIndex === index ? 1 : 0,
-                  visibility: hoverIndex === index ? "visible" : "hidden",
-                }}
-              >
-                {item.description}
-              </p>
-            </div>
-          </div>
-        ))}
+                {event.title && <h2>{event.title}</h2>}
+                {event.description && <p>{event.description}</p>}
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
