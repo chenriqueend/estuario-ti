@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/estuario-ti/static/css/main.c3711083.css",
+    "main.js": "/estuario-ti/static/js/main.7bc957fa.js",
+    "static/media/infoEstuario.pdf": "/estuario-ti/static/media/infoEstuario.87b386fd17ebfa20b1d8.pdf",
+    "static/media/mainLogo.svg": "/estuario-ti/static/media/mainLogo.dfb29df7a3dd87da258e03f8a79bb334.svg",
+    "static/media/lupa.png": "/estuario-ti/static/media/lupa.a8825f6d9bc93225e6f5.png",
+    "static/media/bg.png": "/estuario-ti/static/media/bg.2053e6c32fa75c2b7d23.png",
+    "static/media/ISCONETUBApng.png": "/estuario-ti/static/media/ISCONETUBApng.a1c4d3ebc24b1f423d00.png",
+    "static/media/cadeado.png": "/estuario-ti/static/media/cadeado.3b8f3e981059eb21a6b8.png",
+    "static/media/nassau.png": "/estuario-ti/static/media/nassau.2874180ea036aca31d8c.png",
+    "static/media/brasas.png": "/estuario-ti/static/media/brasas.82501720123343090ae8.png",
+    "static/media/bovespa.png": "/estuario-ti/static/media/bovespa.42b5cbfb6d0b8f2c3cf9.png",
+    "static/media/logo.svg": "/estuario-ti/static/media/logo.a57d850ffe4131e3f9c7f4982e65e642.svg",
+    "static/media/logoLima.svg": "/estuario-ti/static/media/logoLima.e8433be837798a94e2d0f4704d394543.svg",
+    "index.html": "/estuario-ti/index.html",
+    "static/media/arrowLeft.svg": "/estuario-ti/static/media/arrowLeft.0e8b07f96bc5c1fe56b75937ee0998e9.svg",
+    "static/media/arrowRight.svg": "/estuario-ti/static/media/arrowRight.017a5f68d7f3a642bd59078d2bf208e9.svg",
+    "static/media/arrowBottomNavigator.svg": "/estuario-ti/static/media/arrowBottomNavigator.830cc9e954b8d4a55e83565bc7956fe5.svg",
+    "main.c3711083.css.map": "/estuario-ti/static/css/main.c3711083.css.map",
+    "main.7bc957fa.js.map": "/estuario-ti/static/js/main.7bc957fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3711083.css",
+    "static/js/main.7bc957fa.js"
+  ]
+}
