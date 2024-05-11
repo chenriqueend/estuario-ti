@@ -153,8 +153,10 @@ const data = [
 export default function Swipper() {
   return (
     <div className="flex flex-col">
-      {" "}
-      {/* Mudança aqui para flex-col e largura total */}
+      <div className="mb-4 self-center md:text-3xl text-2xl text-lima font-bold ">
+        NOSSOS CLIENTES
+      </div>
+      <div className="border-b-[1px] mb-4"></div>{" "}
       <Swiper
         className="md:max-w-[900px] max-w-[300px] "
         breakpoints={{
@@ -171,7 +173,7 @@ export default function Swipper() {
             slidesPerView: 4,
           },
           1300: {
-            slidesPerView: 5,
+            slidesPerView: 6,
           },
         }}
         grid={{
@@ -197,9 +199,6 @@ export default function Swipper() {
         ))}
       </Swiper>
       <div className="border-b-[1px] mt-4"></div>
-      <div className="mt-4 self-end md:text-lg text-base text-lima font-bold">
-        NOSSOS CLIENTES
-      </div>
     </div>
   );
 }

@@ -52,7 +52,7 @@ const Hero = () => {
 
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat h-[82.5rem] md:h-[86.5rem] "
+      className="bg-cover bg-center bg-no-repeat h-[86.5rem] md:h-[86.5rem] "
       id="home"
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -105,16 +105,16 @@ const Hero = () => {
           <div className="w-1/2 text-left pr-6 ">
             <div className="">
               <p className="md:text-lg text-sm font-extralight text-gray-400">
-                No Brasil, os incidentes de segurança aumentaram
+                No Brasil, os incidentes relacionados a segurança de
+                <br /> dados aumentaram significativamente nos últimos três
+                anos. <br />
+                Qual o nível de segurança seu negócio possui para evitar
                 <br />
-                significativamente nos últimos três anos. <br /> Seu negócio
-                possui um nível de segurança para evitar <br /> invasões e que
-                os seus dados não sejam expostos?
+                invasões e que os seus dados não sejam expostos?
               </p>
               <p className="mt-2 md:text-lg text-sm font-bold text-white">
-                As metodologias de testes de intrusão da EstuárioTI <br />
-                fornecem uma abordagem consistente para garantir
-                <br />
+                As metodologias de testes de intrusão da Estuário TI <br />{" "}
+                fornecem uma abordagem consistente para garantir <br />{" "}
                 resultados completos e detalhados.
               </p>
             </div>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
 
 const Navbar = () => {
-  // Estado para verificar se o usuário rolou a página
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

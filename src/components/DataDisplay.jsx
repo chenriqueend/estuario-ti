@@ -1,7 +1,6 @@
 import React from "react";
 
 export const DataDisplay = () => {
-  // Dados de exemplo para serem exibidos
   const data = [
     { title: "12+", value: "anos de experiência no mercado" },
     { title: "2000+", value: "projetos entregues e aprovados" },

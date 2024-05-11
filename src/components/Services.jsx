@@ -10,11 +10,9 @@ const Services = () => {
       id="servicos"
     >
       <div className="flex flex-initial justify-center">
-        {/* "md:pl-[21.8rem] text-center md:text-left md:px-4 px-2"> */}
-        <h1 className="flex text-2xl font-bold text-[#DAFF00] md:pb-[2rem] pb-4 md:justify-center ">
+        <h1 className="flex md:text-3xl text-2xl text-center font-bold text-[#DAFF00] md:pb-[2rem] pb-4 md:justify-center ">
           NOSSOS SERVIÇOS
         </h1>
-        <div className="flex-none md:w-[1000px]"></div>
       </div>
       <div className="flex justify-center">
         <div className="flex w-full md:max-w-[1240px] flex-col md:flex-row items-center">
@@ -36,8 +34,8 @@ const Services = () => {
                 servidores da sua empresa passa a ser administrada pelo nosso
                 time de experts em segurança da informação. Voltado
                 especialmente para companhias que não possuem equipes de
-                administração de sistemas, o serviço conta com SLA ágil,
-                variável de acordo com a necessidade da sua empresa.
+                administração de sistemas, o serviço conta com SLA ágil e
+                customizável de acordo com a necessidade da sua empresa.
               </p>
             </Dropdown>
             <Dropdown title="threat intelligence">
@@ -45,7 +43,7 @@ const Services = () => {
                 O Threat Intelligence, ou inteligência de ameaças, visa proteger
                 sua empresa contra ameaças reais. Dessa maneira, são feitas
                 análises constantes na web, buscando evidências que caracterizem
-                ameaças de redes, networking, pessoas, aplicações web evitando
+                ameaças de redes, networking, pessoas e aplicações web, evitando
                 os riscos do seu negócio. Tal recurso, permite o gestor conhecer
                 os possíveis riscos e previni-los de modo eficaz, além de estar
                 sempre monitorando as informações da empresa na web.
@@ -87,7 +85,7 @@ const Services = () => {
                 seus colaboradores, bem como dados expostos na internet.
               </p>
             </Dropdown> */}
-            <Dropdown title="teste phishing">
+            <Dropdown title="teste de phishing">
               <p>
                 Por meio de simulações customizadas, a Estuário TI envia e-mails
                 maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
@@ -97,12 +95,12 @@ const Services = () => {
                 seus colaboradores, bem como dados expostos na internet.
               </p>
             </Dropdown>
-            <Dropdown title="pentest -  teste de instrusão">
+            <Dropdown title="TESTE DE INTRUSÃO - PENETRATION TESTING">
               <p>
                 Fique ao menos um passo à frente do invasor. Focado na
                 infraestrutura de networking, o teste age como um invasor
                 interno ou externo interessado em encontrar e explorar as
-                vulnerabilidades. Mas não qualquer atacante. Nossos
+                vulnerabilidades. Mas não qualquer atacante, os nossos
                 especialistas procuram falhas manualmente, num processo
                 meticuloso de busca, garantindo resultados mais eficientes e
                 precisos, que só um humano com expertise é capaz de alcançar.
