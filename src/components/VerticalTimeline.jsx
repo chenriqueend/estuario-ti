@@ -43,7 +43,7 @@ export const VerticalTimeline = () => {
         "Com o acontecimento da pandemia do COVID19, houve um grande volume no acontecimento de crimes cibernéticos, onde crescemos mais de 15% em termos de faturamento, o que consolidou ainda mais a Estuário TI, no mercado brasileiro e internacional.",
     },
     {
-      year: "2022",
+      year: "2024",
       title:
         "Ao longo dos seus 12 anos, a Estuário ajudou a proteger muitas empresas de todos os portes e setores, entre elas grandes companhias do setor financeiro, varejista, industrial, energético e comercio eletrônico, atuando em clientes nacionais e internacionais, sempre atendidos pelo time no Brasil. Em sua trajetória, a Estuário TI consolidou seus negócios aliando expertise técnica, sólida metodologia e tecnologia avançada para entregar serviços de alta qualidade e customizados para cada necessidade de seus clientes.",
       description:
