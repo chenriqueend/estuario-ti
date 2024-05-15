@@ -61,7 +61,7 @@ const Services = () => {
             </Dropdown>
           </div>
           <div className="w-1/2 md:pr-4">
-            <Dropdown title="análise forence digital">
+            <Dropdown title="análise forense digital">
               <p>
                 Análise forense digital, é o processo de coletar, preservar,
                 analisar e apresentar evidências digitais que podem ser usadas
@@ -85,7 +85,7 @@ const Services = () => {
                 seus colaboradores, bem como dados expostos na internet.
               </p>
             </Dropdown> */}
-            <Dropdown title="teste de phishing">
+            <Dropdown title="phishing educativo">
               <p>
                 Por meio de simulações customizadas, a Estuário TI envia e-mails
                 maliciosos para testar a sua equipe. Pesquisamos a sua empresa e
