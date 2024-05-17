@@ -6,9 +6,7 @@ const FormContact = () => {
     try {
       await navigator.clipboard.writeText(textToCopy);
       alert("Texto copiado para a área de transferência!");
-    } catch (err) {
-      alert("Falha ao copiar o texto: ", err);
-    }
+    } catch (err) {}
   };
   return (
     <div className="flex justify-center mt-12 ">
