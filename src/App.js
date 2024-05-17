@@ -38,8 +38,8 @@ function App() {
     <ErrorBoundary>
       <div>
         <Hero />
-        <div id="root"></div>
-        <div id="modal-root"></div>
+        <div id="root" />
+        <div id="modal-root" />
         <Services />
         <InfoArea />
         <Footer />

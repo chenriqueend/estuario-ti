@@ -5,7 +5,7 @@ const FormContact = () => {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(textToCopy);
-      alert("Texto copiado para a área de transferência!");
+      alert("Email copiado para a área de transferência!");
     } catch (err) {}
   };
   return (
