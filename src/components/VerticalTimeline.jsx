@@ -6,9 +6,6 @@ export const VerticalTimeline = () => {
       year: "2012",
       title:
         "Nasce no ano de 2012 a Estuário TI, nome que remete a um lugar seguro para o desenvolvimento da vida existente nos mares e rios, uma empresa com DNA pernambucano voltada especificamente para segurança cibernética. Diferente da maioria não nascemos de uma startup, mas sim do desejo de desenvolvimento de uma empresa com objetivos e missão definidas.",
-
-      description:
-        "A Estuário é convidada para fazer parte da comunidade Conecta Lá. Neste primeiro ano já houve a mudança do escritório do Derby para o Poço da Panela, assim como os primeiros clientes em São Paulo.",
     },
     {
       year: "2013",
