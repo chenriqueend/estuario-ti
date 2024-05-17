@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="md:max-w-[900px] max-w-[300px]">
           <Swiper />
         </div>
-        <div className="md:max-w-[900px] max-w-[300px] mb-[12rem]">
+        <div className="md:max-w-[900px] max-w-[300px] mb-[4rem]">
           <FormContact />
         </div>
         <div className="flex flex-col justify-center items-center">
