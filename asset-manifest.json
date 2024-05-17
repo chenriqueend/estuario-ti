@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/estuario-ti/static/css/main.ebf21cd8.css",
-    "main.js": "/estuario-ti/static/js/main.ff5fcae4.js",
+    "main.css": "/estuario-ti/static/css/main.187c04b1.css",
+    "main.js": "/estuario-ti/static/js/main.bd63ec61.js",
     "static/media/mainLogo.svg": "/estuario-ti/static/media/mainLogo.dfb29df7a3dd87da258e03f8a79bb334.svg",
     "static/media/bg.png": "/estuario-ti/static/media/bg.2053e6c32fa75c2b7d23.png",
     "static/media/nassau.png": "/estuario-ti/static/media/nassau.2874180ea036aca31d8c.png",
@@ -13,11 +13,11 @@
     "static/media/closeIcon.svg": "/estuario-ti/static/media/closeIcon.39647bd684090ebda3961efd1d90dd94.svg",
     "static/media/plusIcon.svg": "/estuario-ti/static/media/plusIcon.afe922d272cc8465d32df9223abd0fad.svg",
     "static/media/arrowBottomNavigator.svg": "/estuario-ti/static/media/arrowBottomNavigator.830cc9e954b8d4a55e83565bc7956fe5.svg",
-    "main.ebf21cd8.css.map": "/estuario-ti/static/css/main.ebf21cd8.css.map",
-    "main.ff5fcae4.js.map": "/estuario-ti/static/js/main.ff5fcae4.js.map"
+    "main.187c04b1.css.map": "/estuario-ti/static/css/main.187c04b1.css.map",
+    "main.bd63ec61.js.map": "/estuario-ti/static/js/main.bd63ec61.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebf21cd8.css",
-    "static/js/main.ff5fcae4.js"
+    "static/css/main.187c04b1.css",
+    "static/js/main.bd63ec61.js"
   ]
 }
