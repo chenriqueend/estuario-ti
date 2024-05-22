@@ -9,42 +9,33 @@ export const VerticalTimeline = () => {
     },
     {
       year: "2013",
-      title: "",
-      description:
+      title:
         "A Estuário é convidada para fazer parte da comunidade Conecta Lá, neste primeiro ano já houve a mudança do escritório do Derby para o Poço da Panela, assim como os primeiros clientes em São Paulo.",
     },
     {
       year: "2014",
       title:
         "Foi o ano de maior mudança para a Estuário, além de irmos para um empresarial bem maior no bairro da Madalena, abrimos o nosso primeiro escritório em São Paulo. Sair de Recife não se significava apenas desenvolvimento corporativo, mas também, quebrar paradigmas e preconceitos, mostrando nossa qualidade nos serviços que entregávamos na maior cidade do Brasil. ",
-      description:
-        "Também em 2014 foi o ano em que abrimos o nosso escritório em São Paulo, sair de Recife não se significava apenas desenvolvimento corporativo, mas também, quebrar paradigmas e preconceitos, mostrando nossa qualidade nos serviços que entregávamos na maior cidade do Brasil.",
     },
     {
       year: "2015",
       title:
         "No início de 2015, desenvolvemos o produto El Pescador e iniciamos às atividades na área de treinamento, conscientização em segurança e testes de phishing. No final daquele mesmo ano recebemos uma proposta da Tempest para adquirir o El Pescador, fizemos a transformação da modelagem do produto e assim concluímos a venda.",
-      description:
-        "Neste mesmo ano fizemos a transformação de produto para empresa e assim em setembro daquele ano concluímos a venda para a Tempest, que o adquiriu para desenvolvimento do seu portfólio.",
     },
     {
       year: "2016",
-      title: "",
-      description:
+      title:
         "Após a venda do El Pescador, a Estuário TI se consolidou no mercado de segurança da informação como uma empresa de serviços de alta qualidade e customizados para cada tipo de cliente.",
     },
     {
       year: "2020",
-      title: "",
-      description:
+      title:
         "Com o acontecimento da pandemia do COVID19, houve um grande volume no acontecimento de crimes cibernéticos, onde crescemos mais de 15% em termos de faturamento, o que consolidou ainda mais a Estuário TI, no mercado brasileiro e internacional.",
     },
     {
       year: "2024",
       title:
         "Ao longo dos seus 12 anos, a Estuário ajudou a proteger muitas empresas de todos os portes e setores, entre elas grandes companhias do setor financeiro, varejista, industrial, energético e comercio eletrônico, atuando em clientes nacionais e internacionais, sempre atendidos pelo time no Brasil. Em sua trajetória, a Estuário TI consolidou seus negócios aliando expertise técnica, sólida metodologia e tecnologia avançada para entregar serviços de alta qualidade e customizados para cada necessidade de seus clientes.",
-      description:
-        "Em sua trajetória, a Estuário TI consolidou seus negócios aliando expertise técnica, sólida metodologia e alta tecnologia para entregar serviços de alta qualidade e customizados para cada necessidade de seus clientes.",
     },
   ];
 
