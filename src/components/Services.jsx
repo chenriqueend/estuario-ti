@@ -6,7 +6,7 @@ import closeIcon from "../assets/closeIcon.svg";
 const Services = () => {
   return (
     <div
-      className="w-full bg-[#060511] min-h-[36rem] md:py-[6rem] py-[4rem]"
+      className="w-full bg-[#060511] min-h-[36rem] md:py-[6rem] py-[4rem] border-t-2 border-[#DAFF00]"
       id="servicos"
     >
       <div className="flex flex-initial justify-center">
