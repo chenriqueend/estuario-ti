@@ -3,6 +3,7 @@ import Services from "./components/Services.jsx";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import { InfoArea } from "./components/InfoArea.jsx";
+import BookSection from "./components/BookSection.jsx";
 
 /** Desenvolvido por Carlos Henrique alves
  * https://github.com/chenriqueend
@@ -42,6 +43,7 @@ function App() {
         <div id="modal-root" />
         <Services />
         <InfoArea />
+        <BookSection />
         <Footer />
       </div>
     </ErrorBoundary>

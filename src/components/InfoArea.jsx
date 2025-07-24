@@ -6,7 +6,7 @@ export const InfoArea = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat  md:h-[175.5rem] h-[255.5rem]  border-t-2 border-[#DAFF00] "
+      className="bg-cover bg-center bg-no-repeat  md:h-[175.5rem] h-[225.5rem]  border-t-2 border-[#DAFF00] "
       id="wing"
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -96,6 +96,7 @@ export const InfoArea = () => {
             </div>
             {!isMobile ? <div className="w-1/2 text-right"></div> : null}
           </div>
+         
           <div className="mt-[6rem]">
             {" "}
             <VerticalTimeline />

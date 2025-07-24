@@ -60,6 +60,7 @@ const Navbar = () => {
         >
           WING
         </li>
+       
         <li
           className="p-3 whitespace-nowrap cursor-pointer hover:text-lima"
           onClick={() => scrollToSection("quemsomos")}
@@ -67,7 +68,13 @@ const Navbar = () => {
           QUEM SOMOS
         </li>
         <li
-          className="p-2 whitespace-nowrap border-2 self-center cursor-pointer hover:border-lima hover:text-lima"
+          className="p-3 cursor-pointer whitespace-nowrap hover:text-lima"
+          onClick={() => scrollToSection("ebook")}
+        >
+          E-BOOK
+        </li>
+        <li
+          className="p-3 whitespace-nowrap border-2 self-center cursor-pointer hover:border-lima hover:text-lima"
           onClick={() => scrollToSection("contato")}
         >
           ENTRAR EM CONTATO

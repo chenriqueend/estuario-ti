@@ -152,7 +152,7 @@ const data = [
 ];
 export default function Swipper() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <div className="mb-4 self-center md:text-3xl text-2xl text-lima font-bold ">
         NOSSOS CLIENTES
       </div>
